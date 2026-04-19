@@ -1,0 +1,85 @@
+{
+  "name": "tea-core",
+  "owner": {
+    "name": "David Vennei",
+    "email": "david@davidvenneit.com"
+  },
+  "metadata": {
+    "description": "TEA-Core private skill registry — Lovable workflow skills plus shared meta-tooling, for Claude Code and Paperclip.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "checkout-handoff",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/checkout-handoff"
+      },
+      "description": "Enforces the mandatory /release-then-PATCH sequence every Paperclip agent must follow when handing off a checked-out issue, preventing stale executionRunId locks that cause up to 60-minute wakeOnDemand delays."
+    },
+    {
+      "name": "lovable-prompt-library",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-prompt-library"
+      },
+      "description": "200+ battle-tested Lovable prompts — router plus 16 lazy-loaded category files, includes the Default Lovable Prompt and the three universal rules (State Completeness, Minimal Diff, Rollback)."
+    },
+    {
+      "name": "lovable-project-generator",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-project-generator"
+      },
+      "description": "9-stage intake interview that generates a complete 11-page Notion project scaffold for a new Lovable build, with two checkpoints for ship-early options."
+    },
+    {
+      "name": "lovable-deployment-ops",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-deployment-ops"
+      },
+      "description": "Post-merge deployment verification for Lovable-managed Supabase projects — 4-layer verification framework (GitHub → Edge Functions → SQL → Frontend) with 9 battle-tested hallucination patterns."
+    },
+    {
+      "name": "lovable-notion-automation-workflow",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-notion-automation-workflow"
+      },
+      "description": "End-to-end Lovable+Notion workflow automation enforcing Plan → Approve → Implement → Verify → Loop with 8 non-negotiable rules, battle-tested across 70+ Plans."
+    },
+    {
+      "name": "lovable-verification-workflow",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-verification-workflow"
+      },
+      "description": "Automates Lovable implementation verification via Claude in Chrome browser tools, captures PASS/FAIL results, and records them to Notion."
+    },
+    {
+      "name": "lovable-secrets-extractor",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-secrets-extractor"
+      },
+      "description": "Extracts edge function secrets from a Lovable-managed Supabase project by deploying a temporary Deno edge function and reconstructs a usable .env file."
+    },
+    {
+      "name": "lovable-tech-stack-workflow",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/lovable-tech-stack-workflow"
+      },
+      "description": "Coordinator skill for safe work against Lovable's Supabase-backed stack — routes implement → verify → record → monitor with 9 hallucination-recovery patterns. Sister skill to lovable-deployment-ops."
+    },
+    {
+      "name": "tea-core-skill-registry",
+      "source": {
+        "source": "github",
+        "repo": "TEA-Core/tea-core-skill-registry"
+      },
+      "description": "Discipline that keeps the TEA-Core skill corpus consistent across GitHub and the Obsidian vault — migration, conformance audit, and registration procedures for every skill."
+    }
+  ]
+}
